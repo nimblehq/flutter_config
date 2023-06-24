@@ -32,6 +32,7 @@ class FlutterConfig {
         'Ensure you have a .env file and you\n'
         'have loaded the variables',
       );
+      return 'FlutterConfig Variables are Empty';
     } else if (variables.containsKey(key)) {
       return variables[key];
     } else {
@@ -39,6 +40,7 @@ class FlutterConfig {
         'FlutterConfig Value for Key($key) not found\n'
         'Ensure you have it in .env file',
       );
+      return 'FlutterConfig Value for Key($key) not found';
     }
   }
 
